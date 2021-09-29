@@ -1,0 +1,7 @@
+{
+  "name": "JAVASCRIPT",
+  "version": "1.0.0",
+  "dependencies": {
+    "stringify": "^5.2.0"
+  }
+}
