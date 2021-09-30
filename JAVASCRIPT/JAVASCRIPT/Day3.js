@@ -1,88 +1,48 @@
 const file = require('fs');
 
-
-f = file.readFileSync('input.txt').toString().split('\n');
-
 let step = 0;
 
 let trees = 0;
 
-const readTree = (line) =>{
-    //console.log(line.charAt(step));
-    if(line.charAt(step) === '#'){
-        trees ++;
-        console.log(trees);
+f = file.readFileSync('input.txt', "utf-8").toString().split('\n');
+//console.log(f[0]);
 
+
+line = 0;
+const readLine = (step) => {
+
+    console.log(step);
+    let lineChars = '';
+    for (let i = 0; i < f[line].length ; i++) {
+    lineChars += f[line].split('')[i];
+    }
+    console.log(lineChars);
+    if( f[line].charAt(step) === '#'){
+        trees++;
+        line++;
+        return f[line] + 'The Character at ' + step + 'is ' +  f[line].charAt(step);
+
+    }
+  line ++;
+     return f[line].charAt(step);
+
+//line ++;
+};
+
+
+
+const walk = () => {
+    for (let i = 1; i < f.length;        i = i + 2) {
+        step = (step + 1)%31;
+        if( f[i].charAt(step) === '#'){
+            trees++;
+        }
+       console.log(f[i]);
+       line ++;
     }
 
 
 }
 
-const readlines = (file) => {
-    for (let i = 0; i < file.length; i+5){
-        step = (step + 5)%31;
-
-        console.log(file[i]);
-        readTree(file[i]);
-
-
-    }
-
-}
-
-
-let treesP2 = 0;
-let stepsP2 = 0;
-
-const readlinesP2 = (file, slope) => {
-    for (let i = 0; i < file.length; i++){
-        stepsP2 = (stepsP2 + slope)%31;
-        console.log(file[i]);
-        readTreeP2(file[i]);
-
-
-
-    }
-    console.log(treesP2);
-    return treesP2;
-
-
-}
-
-
-const readTreeP2 = (line) =>{
-    if(line.charAt(stepsP2) === '#'){
-        treesP2 ++;
-    }
-
-
-}
-
-let slops = [1,3,5,7];
-
-let values =  Array();
-// for (let i = 0; i < slops.length; i++) {
-//     //readlinesP2(f,slops[i]);
-//     console.log(treesP2);
-//     values.push(readlinesP2(f, slops[i]));
-//
-//
-// }
-
-
-
-
-
-// var num = 1;
-// for (let i = 0; i <slops.length; i++){
-//     num *= values[i];
-//     console.log(77* 218 *65 *82* 44);
-// }
-
-// console.log(num)
-
-readlines(f,1);
-
-//console.log(treesP2);
-console.log(77* 218 * 65  * 82 * 83);
-
+walk();
+console.log(trees);
