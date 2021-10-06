@@ -1,23 +1,43 @@
-const fs = require('fs');
-const fetch = require('fetch');
-let url = 'https://adventofcode.com/2020/day/5/input';
-const file = fs.readFileSync('./AdventOfCode/input.txt',"utf-8").split('\n') ;
+const fs = require('fs');;
+//const file = fs.readFileSync('./AdventOfCode/input.txt', "utf-8").split('\n');
+
+var answers = Array();
+var numberofyes = 0;
+const loadFIle = async() => {
+    const file = fs.readFileSync('./AdventOfCode/input.txt', "utf-8").split('\n\n');
+    file.forEach(file => {
+        answers.push(file)
+    })
+
+}
+
+loadFIle()
+    .then(console.log(numberofyes))
+    .catch(err => {
+        console.log(e.message);
+    })
 
 
-const parseRow = (row) => {
-
-    let r =  Object();
-   r.start = 0 ;
-   r.end = 128;
-
-   let diff = r.end - r.start;
 
 
 
-    console.log(diff)
+
+const checkAnswers = (answer) => {
+
+
+    const groupAnswers = new Array();
+    const numberofPeople = groupAnswers.length;
+
+    answer.split('\n').forEach(a => console.log(groupAnswers.push(a)))
+
+    return groupAnswers;
+
 }
 
 
-parseRow(file[0].substring(0,7))
-//parseColumn(file[0].substring(8 , file[0].length ))
 
+console.log(checkAnswers(answers[0]))
+
+
+
+//parseColumn(row.substring(8 , row.length ))
