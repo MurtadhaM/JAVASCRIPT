@@ -1,12 +1,12 @@
 const fs = require('fs');;
 //const file = fs.readFileSync('./AdventOfCode/input.txt', "utf-8").split('\n');
 
-var answers = Array();
+var groups = Array();
 var numberofyes = 0;
 const loadFIle = async() => {
     const file = fs.readFileSync('./AdventOfCode/input.txt', "utf-8").split('\n\n');
     file.forEach(file => {
-        answers.push(file)
+        groups.push(file)
     })
 
 }
@@ -24,19 +24,24 @@ loadFIle()
 
 const checkAnswers = (answer) => {
 
+    numberofmembers = answer.length;
 
-    const groupAnswers = new Array();
-    const numberofPeople = groupAnswers.length;
 
-    answer.split('\n').forEach(a => console.log(groupAnswers.push(a)))
+    for (var i = 0; i < answer.length; i++) {
 
-    return groupAnswers;
+
+
+
+    }
+
+
+    return answer;
 
 }
 
 
 
-console.log(checkAnswers(answers[0]))
+console.log(checkAnswers(groups[0]))
 
 
 

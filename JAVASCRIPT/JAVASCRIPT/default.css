@@ -1,0 +1,68 @@
+/*
+Author: Miguel Morel                                                                                                                       
+Assignment: Calculator Try 
+Student ID: 800877651 
+*/
+
+body {
+    font-family: verdana;
+    color: blue;
+    background-color: LightGray;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Cambria, Cochin, Georgia, serif;
+    text-align: center;
+    line-height: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: mediumseagreen;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+nav {
+    text-align: center;
+}
+
+label {
+    float: left;
+    width: 3em;
+    text-align: right;
+}
+
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+p {
+    margin: 0;
+}
+
+td {
+    width: 10em;
+}
