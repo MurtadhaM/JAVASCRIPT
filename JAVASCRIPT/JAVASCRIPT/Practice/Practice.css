@@ -1,0 +1,63 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: white;
+    width: 465px;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 25px;
+/*    box-shadow: 5px 5px 0 0 aqua;*/
+    padding: 0 2em 1em;
+}
+header {
+	text-align: center;
+	border-bottom: 3px solid aqua;}
+h1 { 
+    font-size: 150%;
+    margin-bottom: .5em;
+}
+h2 {
+	font-size: 140%;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: .2em;
+}
+select {
+	width: 305px;
+}
+#menu h2 {
+	padding-top: 1em;
+
+}
+#menu p {
+	margin-top: 0;
+	margin-bottom: .7em;
+}
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+}
+ul li {
+	display: inline;
+    padding: 5px 0 5px 0;
+}
+#total {
+	margin-top: .5em;
+	margin-bottom: .7em;
+	color: blue;
+}
+input {
+    width: 150px;
+    margin-right: 5px;
+}
+#buttons {
+	margin-top: 0;
+	width: 1000px;
+}
+/* add styling for buttons on homepage */
+
+
+
+
+
