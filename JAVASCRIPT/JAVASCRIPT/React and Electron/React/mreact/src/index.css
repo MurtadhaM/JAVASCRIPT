@@ -1,0 +1,39 @@
+*{
+ margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+    
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: rgb(117, 1, 1);
+    background: #f1f1f1;
+    
+
+}
+
+h1{
+    font-size: 24px;
+    line-height: 1.3333333;
+    color: #333333;
+    font-weight: 400;
+    text-align: center;
+
+}
+.bookList{
+    width: 40vw;
+    display: grid;
+    border: 1px solid rgb(236, 2, 2) ;
+    grid-gap: 6em;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.book {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+       
+}

@@ -1,0 +1,3 @@
+node_modules
+out
+**/*/adapters/**/index.ts
