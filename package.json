@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "curl": "^0.1.4",
+    "download": "^8.0.0",
+    "download-file-sync": "^1.0.4",
+    "getfile": "^0.1.4",
+    "install": "^0.13.0",
+    "ts-node": "^10.4.0"
+  }
+}
