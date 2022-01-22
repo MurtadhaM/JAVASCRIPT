@@ -1,0 +1,76 @@
+body { background:#F6F2EF66; color:#293040; font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size:1.1em; margin:0; padding:0; }
+a { color:#007083; }
+#main { margin: auto; max-width:800px; }
+.formula { font-family:'M Plus 1p',sans-serif; font-weight:500; font-size:0.95em; color:#334455; text-decoration:none; }
+
+#titlebar { margin:30px 0 0 0; }
+#title { display:inline; font-size:1.2em; }
+#titlelink { text-decoration:none; color:#C01F00; }
+#githublink { text-decoration:none; font-size:.8em; color:#4490a4; padding-left:1em; }
+#helplink { float:right; margin-top:0.3em; text-decoration:none; font-size:.9em; font-weight:bold; }
+
+#inputForm { background:#f9f3e9; color:#000; margin:5px 0; padding:10px 10px 10px 12px; border:1px solid #cccaaa; border-radius:8px; }
+#symbolButtonRow { margin: -2px 0 5px 3px; color:#456; font-size:0.95em; }
+#symbolButtons { display:inline-block; }
+#symbolButtons .formula { color:#444; }
+#accessibilityRow { margin: 10px 0 0 3px; color:#234; }
+#proveButton { width:70px; font-size:0.9em; padding:3px; }
+#flaField { width:calc(100% - 97px); }
+.button { background:#ede9df; color:#222; border:1px solid #bbb; cursor:default; }
+.symbutton { display:inline-block; width:18px; height:18px; color:#333!important; padding:0px 1px 5px 1px; margin-right:2px; text-align:center; }
+#accessibilitySpan { display:none; font-size:0.9em; }
+#accessibilityRow input[type=checkbox] { vertical-align: middle; position: relative; bottom: .08em; margin:0 0px 0 5px; }
+#backtostartpage { float:right; display:none; }
+#backtostartpage a { text-decoration:none; }
+
+#intro { margin:30px 0; }
+#intro p { margin:8px 0; line-height:1.5em; }
+#exampleList { list-style-type:none; margin:0 30px 20px; padding:0; }
+#exampleList li { padding:0.1em; cursor:pointer; }
+#exampleList a { text-decoration:none; color:#850; }
+#intro .formula { color:#850; }
+#intro h3 { font-size:1.1em; font-weight:600; color:#456; margin:20px 0 5px;}
+
+#status { margin:30px 0 10px; padding:10px; text-align:center; display:none; }
+#statusbtn { margin:8px; color:#3390a3; cursor:default; }
+#statusbtn:hover { color:#007083 }
+/*#working { display:block; margin:auto; width:100px; padding:5px; color:#456; background:#fce9ba66; border:1px solid #cccac0; border-radius:8px; animation: shadow-pulse 1s infinite; }*/
+/*@keyframes shadow-pulse { */
+/*  0% { box-shadow: 0 0 0 0px #00708399; }*/
+/*  100% { box-shadow: 0 0 0 10px #0000; }*/
+/*}
+/* #waitSymbol { margin:0 auto 10px auto; border:8px solid #fce9ba; border-top:8px solid #c01f00; border-radius:50%; width:20px; height:20px; animation: spin 3s linear infinite; -webkit-animation: spin 3s linear infinite; } */
+/* @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } } */
+/* @-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); } } */
+
+#rootAnchor { position:absolute; left:0; right:0; margin:15px auto; width:0; }
+.treeNode, .treeNodeHiParent, .treeNodeHiChild { position:absolute; white-space:nowrap; text-align:center; margin-left:10px;  }
+.treeNode span { display:inline-block; vertical-align: top; }
+.treeNode .formula { margin:0 3px; }
+.nodenumber { color: #566; width: 1.5em; padding-top:1px; text-align: right; }
+.fromnumbers { color: #566; width: 2.5em; padding-top:1px; text-align: left; }
+.worldlabel { color: #742; width: 1.5em; padding-top:1px; margin-right:0.5em; text-align: center; }
+.treeNode b { display:block; margin-bottom:30px; }
+#exportDiv { text-align:center; padding-bottom:30px; }
+#exportDiv button { color:#999; white-space:nowrap; background:unset; border:none; }
+
+#model { margin:20px; padding:3px 20px; text-align:center; display:none; }
+#model b { font-weight:500; color:#023; }
+#model table { margin:auto; border:1px solid #999; padding:5px; }
+
+@media (max-width:840px) {
+  #main { width:94%; }
+ .hideOnTablet { display:none; }
+}
+@media (max-width:500px) {
+  .hideOnPhone { display:none; }
+  .formula { font-size:0.9em; }
+  #proveButton { width:55px; }
+  #symbolButtonRow { font-size:0.9em; }
+  .symbutton { display:inline-block; font-size:0.9em; width:16px; height:16px; margin:0 1px 0 0; vertical-align:bottom; }
+  #flaField { width:calc(100% - 77px); }
+  #rootAnchor { transform:scale(0.9); }
+}
+
+#testdrive tr:nth-child(even) { background-color: #e9e9e6; }
+#testdrive td.formula { cursor:pointer; }

@@ -1,0 +1,90 @@
+<meta charset="utf-8">
+
+<title>TPG tests</title>
+
+<button onclick="runalltests()">run all tests</button>
+
+<script>
+  
+alltests = {};
+testnames = [];
+  
+function showtests(filename) {
+    document.write('<h3>'+filename+'</h3>');
+    for (var name in tests) {
+        if (Array.prototype[name]) continue;
+        testnames.push(name);
+        alltests[name] = tests[name];
+        document.write('<button onclick="run(\''+name+'\')">'+name+'</button><span id="r'+name+'"></span><br>');
+    }
+}
+
+var outspan = null;
+function run(testname) {
+    console.log(testname);
+    outspan = document.getElementById('r'+testname);
+    alltests[testname]();
+}
+
+var curIndex = 0;
+function runalltests() {
+    var name = testnames[curIndex];
+    console.log('-------------'+curIndex);
+    run(name);
+    if (curIndex < testnames.length-1) {
+        curIndex++;
+        setTimeout('runalltests()', 200);
+    }
+}
+
+function assertEqual(x,y) {
+    if (x==y) print('.');
+    else print(' <b>fail: '+x+' should be '+y+'<b> ');
+}
+
+function assert(x) {
+    if (x) print('.');
+    else print(' <b>fail</b> ');
+}
+
+function print(s) {
+    outspan.innerHTML += s;
+}
+
+function log(s) {
+    return;
+    //console.log(s);
+}
+
+</script>
+<script src="array.js"></script>
+<script src="formula.js"></script>
+<script src="parser.js"></script>
+<script src="test_formula.js"></script>
+<script>
+    showtests('test_formula.js');
+</script>
+<script src="test_equality.js"></script>
+<script>
+    showtests('test_parser.js');
+</script>
+<script src="modelfinder.js"></script>
+<script src="test_modelfinder.js"></script>
+<script>
+    showtests('test_modelfinder.js');
+</script>
+<script src="prover.js"></script>
+<script src="test_prover.js"></script>
+<script>
+    showtests('test_prover.js');
+</script>
+<script src="equality.js"></script>
+<script src="test_equality.js"></script>
+<script>
+    showtests('test_equality.js');
+</script>
+<script src="sentree.js"></script>
+<script src="test_sentree.js"></script>
+<script>
+    showtests('test_sentree.js');
+</script>
