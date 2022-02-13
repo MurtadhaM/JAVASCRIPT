@@ -1,0 +1,1 @@
+exercism configure -w ./                            
