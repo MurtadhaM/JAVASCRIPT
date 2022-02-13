@@ -1,1 +1,5 @@
-/Users/m/.config/exercism/user.json
+{
+  "apibaseurl": "https://api.exercism.io/v1",
+  "token": "7de7afee-c11e-4344-a9bd-6f084da37885",
+  "workspace": "./"
+}
