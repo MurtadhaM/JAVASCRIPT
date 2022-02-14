@@ -1,0 +1,75 @@
+# GET THE TOKEN:
+TOKEN_VALUE=`curl -H 'Host: api.mathpix.com' -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:97.0) Gecko/20100101 Firefox/97.0' -H 'accept: application/json, text/plain, */*' -H 'accept-language: en-US,en;q=0.5' -H 'content-type: application/json;charset=utf-8' -H 'origin: https://accounts.mathpix.com' -H 'referer: https://accounts.mathpix.com/' -H 'sec-fetch-dest: empty' -H 'sec-fetch-mode: cors' -H 'sec-fetch-site: same-site' -H 'te: trailers' --data-binary '{"email":"mmarzou0@gmail.com","password":"Mavaratchi1,"}' --compressed 'https://api.mathpix.com/v1/user/login' | python -c "import sys, json; print json.load(sys.stdin).values()[1]"`;
+
+
+
+
+
+
+
+# RENEW THE CREDIT:
+subscription_id=16A0CASxNNJvdH17P; curl -H "Host: api.mathpix.com" -H "Cookie: mathpix_token=Bearer%20$TOKEN_VALUE" -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:97.0) Gecko/20100101 Firefox/97.0" -H "accept: application/json, text/plain, */*" -H "accept-language: en-US,en;q=0.5" -H "content-type: application/json" -H "origin: https://accounts.mathpix.com" -H "referer: https://accounts.mathpix.com/" -H "sec-fetch-dest: empty" -H "sec-fetch-mode: cors" -H "sec-fetch-site: same-site" -H "te: trailers" --data-binary '{"plan_id":"free-plan","subscription_id":"16A0CASxNNJvdH17P"   , "excess_payments":10}' --compressed https://api.mathpix.com/api/generate_checkout_existing_url
+
+
+
+NOTES:
+1. CHANGE THE mathpix_token in the Cookie and subscription ID	
+2. Go to dashboard.mathpix.com
+
+
+# REQUEST:
+subscription_id=16A0CASxNNJvdH17P; 
+Token_Variable=_3ntsTdJOciu43j7FQoDGikK4eWEBK4wkG-HDSVEpArG1b_88FTzYWXBRjzH4s0Aer0m5a7nlEUGPnoELveKlg;
+
+ 
+subscription_id=16A0CASxNNJvdH17P; curl -H "Host: api.mathpix.com" -H "Cookie: mathpix_token=Bearer%20$Token_Variable" -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:97.0) Gecko/20100101 Firefox/97.0" -H "accept: application/json, text/plain, */*" -H "accept-language: en-US,en;q=0.5" -H "content-type: application/json" -H "origin: https://accounts.mathpix.com" -H "referer: https://accounts.mathpix.com/" -H "sec-fetch-dest: empty" -H "sec-fetch-mode: cors" -H "sec-fetch-site: same-site" -H "te: trailers" --data-binary '{"plan_id":"free-plan","subscription_id":"16A0CASxNNJvdH17P"   , "excess_payments":10}' --compressed https://api.mathpix.com/api/generate_checkout_existing_url
+
+
+
+#GET THE TOKEN:
+:status: 200
+content-type: application/json; charset=utf-8
+content-length: 125
+date: Mon, 14 Feb 2022 07:18:51 GMT
+access-control-allow-credentials: true
+access-control-allow-headers: Authorization, Origin, Accept, Content-Type, X-Requested-With
+access-control-allow-methods: GET, POST, PUT, PATCH, DELETE, OPTIONS
+access-control-allow-origin: https://accounts.mathpix.com
+access-control-expose-headers: Mathpix-Request-Id, Via
+access-control-max-age: 86400
+mathpix-request-id: 4e665fcf-e080-412b-93b9-9f939da93793
+set-cookie: token=cmacBHAFDmF0ql-CPyYTbAW1WjgzDNCdPUi17YEBfpK74O_EO9GVJkjfLOcNT9-15-7qUT8ueJjJGy2se7oRYg; Path=/; Max-Age=7776000; HttpOnly; Secure
+via: mathpix-api-gateway, 1.1 b9d1b307966c2273bf97ed7c681603da.cloudfront.net (CloudFront)
+x-cache: Miss from cloudfront
+x-amz-cf-pop: IAD89-P1
+x-amz-cf-id: _TK0KSE5Kfmooj3_z2eiJj3r95bTNI8rqEgfUL6i2RqmPfpWQTOjgA==
+
+{"message":"user_logged_in","token":"cmacBHAFDmF0ql-CPyYTbAW1WjgzDNCdPUi17YEBfpK74O_EO9GVJkjfLOcNT9-15-7qUT8ueJjJGy2se7oRYg"}
+
+
+
+
+curl -H 'Host: api.mathpix.com' -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:97.0) Gecko/20100101 Firefox/97.0' -H 'accept: application/json, text/plain, */*' -H 'accept-language: en-US,en;q=0.5' -H 'content-type: application/json;charset=utf-8' -H 'origin: https://accounts.mathpix.com' -H 'referer: https://accounts.mathpix.com/' -H 'sec-fetch-dest: empty' -H 'sec-fetch-mode: cors' -H 'sec-fetch-site: same-site' -H 'te: trailers' --data-binary '{"email":"mmarzou0@gmail.com","password":"Mavaratchi1,"}' --compressed 'https://api.mathpix.com/v1/user/login'
+
+
+
+RAW REQUEST:
+:method: POST
+:path: /api/generate_checkout_existing_url
+:authority: api.mathpix.com
+:scheme: https
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:97.0) Gecko/20100101 Firefox/97.0
+accept: application/json, text/plain, */*
+accept-language: en-US,en;q=0.5
+accept-encoding: gzip, deflate, br
+content-type: application/json
+cookie: mathpix_token=Bearer%20_3ntsTdJOciu43j7FQoDGikK4eWEBK4wkG-HDSVEpArG1b_88FTzYWXBRjzH4s0Aer0m5a7nlEUGPnoELveKlg
+origin: https://accounts.mathpix.com
+referer: https://accounts.mathpix.com/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-site
+te: trailers
+Content-Length: 84
+
+{"plan_id":"free-plan","subscription_id":"16A0CASxNNJvdH17P" , "excess_payments":10}
