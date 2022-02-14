@@ -19,7 +19,9 @@
     "eslint": "^8.8.0",
     "jest": "^27.5.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "babel": "^6.23.0"
+  },
   "scripts": {
     "test": "jest ./*",
     "watch": "jest --watch ./*",
