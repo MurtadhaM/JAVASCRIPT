@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://com.DigitalWatch.org" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="WOrJuk2Qs6.DigitalWatch" package="WOrJuk2Qs6" required_version="2.3.1" ambient_support="enable"/>
+    <author href="https://github.com/MurtadhaM" email="mmarzou0@gmail.com">Murtadha Marzouq</author>
+    <tizen:category name="http://tizen.org/category/wearable_clock"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="dollmaker-cuts-off-joker_s-face-photo-u1.jpg"/>
+    <tizen:allow-navigation/>
+    <name>DigitalWatch</name>
+    <tizen:privilege name="http://tizen.org/privilege/alarm"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
+</widget>
