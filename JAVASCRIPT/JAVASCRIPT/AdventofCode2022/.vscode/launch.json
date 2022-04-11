@@ -15,11 +15,11 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": true,
-      "cwd": "/Users/m/Documents/GitHub/JAVASCRIPT/JAVASCRIPT/JAVASCRIPT/AdventofCode2022",
+      "cwd": "/Users/m/Documents/GitHub/JAVASCRIPT/JAVASCRIPT/JAVASCRIPT/AdventofCode2022/Flask",
       "environment": [],
-      "program": "/Users/m/Documents/GitHub/JAVASCRIPT/JAVASCRIPT/JAVASCRIPT/AdventofCode2022/build/Debug/outDebug",
+      "program": "/Users/m/Documents/GitHub/JAVASCRIPT/JAVASCRIPT/JAVASCRIPT/AdventofCode2022/Flask/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
-      "MIMode": "gdb",
+      "MIMode": "lldb",
       "externalConsole": true
     }
   ]

@@ -26,5 +26,10 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ]
+  ],
+  "files.associations": {
+    "*.sol": "solidity",
+    "string.h": "c",
+    "stdio.h": "c"
+  }
 }
