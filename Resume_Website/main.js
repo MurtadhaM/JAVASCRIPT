@@ -18,7 +18,7 @@ const information = {
    "Objective": "Seeking an IT management and Administration role involving, networking, security, and scripting.",
    "Education": [
 
-       {
+       {    
            "school": "Central Piedmont Community College",
            "degree": "Associates of Science",
            "major": "Art and Design",
