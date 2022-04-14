@@ -1,0 +1,126 @@
+:root {
+    --imperial-red: #ff3232;
+    --honeydew: #e6f5f7;
+    --powder-blue: #77d3f1;
+    --gold: rgb(255, 187, 86);
+    --prussian-blue: #0e2229;
+}
+
+header {
+    text-align: center;
+    display: block;
+}
+
+header a:link,
+a:visited {
+    color: var(--honeydew);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--imperial-red);
+}
+
+body {
+    font-family: Sora, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: var(--prussian-blue);
+    color: var(--honeydew);
+    font-size: 90%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#profile_picture {
+    width: 40%;
+    height: 40%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    align-self: center;
+}
+
+h2 {
+    font-size: 125%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--gold);
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 150%;
+    color: var(--powder-blue);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section p:first-child,
+#publications {
+    font-size: 125%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--gold);
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 30px;
+}
+
+#link {
+    color: rgb(149, 59, 245);
+}
+
+.column:not(:last-child) {
+    border-right: 1px solid var(--honeydew);
+}
+
+@media screen and (max-width: 900px) {
+    .row {
+        flex-direction: column;
+    }
+    .column:not(:last-child) {
+        border-right: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .column {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+h3,
+p,
+li,
+ul {
+    margin: .5em;
+}
+
+.p:first-child {
+    padding-top: 25px;
+}
+
+.education p:not(:first-child),
+.Certification p:not(:first-child) {
+    margin-left: 30px;
+}
+
+.certification #date,
+.certification #describtion {
+    margin-left: 30px;
+}
