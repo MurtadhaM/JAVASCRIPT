@@ -1,5 +1,4 @@
-const { desktopCapturer, remote } = require("electron");
-const { Menu, dialog } = remote;
+const { Menu, dialog } = require('electron');
 const { writeFile } = require("fs");
 
 let startButton = document.getElementById("startCapture");
@@ -34,6 +33,8 @@ saveButton.onclick = () => {
 };
 
 async function getVideoSources() {
+  const  {desktopCapturer,remote}  = require("electron");
+
   const inputSources = await desktopCapturer.getSources({
     types: ["window", "screen"],
   });

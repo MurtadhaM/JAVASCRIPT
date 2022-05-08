@@ -1,5 +1,4 @@
 
-package mustafa;
 
 public class DVD extends Product {
 

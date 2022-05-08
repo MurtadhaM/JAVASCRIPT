@@ -1,5 +1,4 @@
 
-package mustafa;
 import java.util.*;
 
 public class PremiumMember extends Member {
