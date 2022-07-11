@@ -35,9 +35,8 @@ saveButton.onclick = () => {
 async function getVideoSources() {
   const  {desktopCapturer,remote}  = require("electron");
 
-  const inputSources = await desktopCapturer.getSources({
-    types: ["window", "screen"],
-  });
+
+
 
   const videoOptionsMenu = Menu.buildFromTemplate(
     inputSources.map((source) => {
@@ -53,7 +52,6 @@ async function getVideoSources() {
 
 async function selectSource(source) {
   videoSelectBtn.innerText = source.name;
-
   const constraints = {
     audio: false,
     video: {
