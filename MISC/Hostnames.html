@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head meta="charset=utf-8">
+
+    <title>The Amazing Hostname Generator </title>
+    <meta name="description" content="The Amazing Hostname Generator">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="Hostnames.js"></script>
+    <link rel="stylesheet" href="Hostnames.css">
+    <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/js/bulma-extensions.min.js"></script>
+</head>
+
+
+<body onload="populateDropdown()">
+
+    <div action="#Generated" id="generator_form">
+
+        <!-- Drop Down-->
+        <select id="dropdown" name="dropdown">
+            <option value="">Select a City</option>
+        </select>
+        <input type="text" id="serial" value="" placeholder="Input Serial Number">
+        <br>
+        <input type="text" id="make" name="make" placeholder="Make">
+        <br><input type="text" id="model" name="model" placeholder="Model">
+       <br>
+        <button onclick="generateRandomHex()">Generate</button>
+        <br>
+
+
+        <button class="button is-info" onclick="downloadCSV()">Export to CSV</button>
+        <br>
+    </div>
+    <p id="output" class="output"> </p>
+
+
+     
+    <table id="hostnames-table" class="table">
+          
+        <tr class="table-row" id="table-row">
+
+        
+            <th id="table-Prefix">Prefix</th>
+            <th id="table-Serial">Serial</th>
+            <th id="table-Make">Make</th>
+            <th id="table-Model">Model</th>
+            <th id="table-Hostname">Hostname</th> 
+            
+        </table>
+
+
+
+
+
+
+        </h1>
+
+        
+</body>
+
+
+</html>

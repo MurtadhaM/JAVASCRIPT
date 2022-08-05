@@ -1,0 +1,111 @@
+body {
+    background-color: #6569a0;
+}
+
+#generator_form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#generator_form serial,
+#dropdown {
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: orangered;
+    text-align: center;
+    align-self: center;
+}
+input {
+
+   width: 100%;
+   text-align: center;
+}
+#generator_form button {
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #6569a0;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    border: 1px solid #6569a0;
+
+}
+
+#output {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: tomato;
+}
+.table th:hover{
+       scale: 1.05;
+    
+    
+        color: red !important;;
+    
+    
+}
+ tr td  {
+     font-size: 14pt;
+
+     
+     
+    
+}
+
+*{
+    text-align: center;
+    align-self: center;
+    font-size: 14pt;
+    
+}
+tr td {
+    
+    
+    text-align: center;
+    
+     background-color: white;
+    color: purple;
+}
+    
+.table-row th {
+         font-size: 14pt;
+align-content: center;
+    
+    margin: 0px;
+    padding: 9px;
+    
+    margin-left: 10%;
+    
+     background-color: black;
+
+    color: red ;;
+}
+
+#table-Make, #table-Hostname,#table-Make,#table-Model,#table-Serial ,#table-Prefix{
+    
+    
+    text-align: center;
+        
+    background-color: yellow;
+    border: purple;
+    
+    border-style: solid;
+    border-width: 1px;
+    
+    
+    
+    color: teal;
+}
+
+
+
