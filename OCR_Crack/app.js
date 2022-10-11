@@ -5,8 +5,8 @@ const https = require('https');
 const http = require('http');
  // Setting up the SSL certificate
 var https_options = {
-  key: fs.readFileSync('key.pem', 'utf8'),
-  cert: fs.readFileSync('server.crt', 'utf8')
+//  key: fs.readFileSync('key.pem','utf8'),
+// cert: fs.readFileSync('server.crt', 'utf8')
 };
 const app = express();
 //Creating a server
