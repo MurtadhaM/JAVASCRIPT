@@ -1,46 +1,30 @@
 // Importing the libraries
-const express = require('express');
-const fs = require('fs');
-const https = require('https');
+var mine = JSON.parse('   {"success": "Exceeded maximum number of activations",        "code": "103",        "activated": true,        "timestamp": 1645379846,        "sig": "ffe67b2cc95cb9f87d5e3b29ee080a3f"}')
 const http = require('http');
- // Setting up the SSL certificate
-var https_options = {
-//  key: fs.readFileSync('key.pem','utf8'),
-// cert: fs.readFileSync('server.crt', 'utf8')
-};
-const app = express();
-//Creating a server
- var server = https.createServer(https_options, app).listen(443);
- var server2 = http.createServer( app).listen(80);
- try{
- // Responding with a fake success message
- server.on('request', function(request, response) {
-    var mine = JSON.parse('   {"success": "Exceeded maximum number of activations",        "code": "103",        "activated": true,        "timestamp": 1645379846,        "sig": "ffe67b2cc95cb9f87d5e3b29ee080a3f"}')
-
-    console.log(request.method + ' ' + request.url);
-    response.writeHead(200, {'Content-Type': 'application/json'});
-    response.end(JSON.stringify(mine));
-    });
-
-    server2.on('request', function(request, response) {
-        var mine = JSON.parse('   {"success": "Exceeded maximum number of activations",        "code": "103",        "activated": true,        "timestamp": 1645379846,        "sig": "ffe67b2cc95cb9f87d5e3b29ee080a3f"}')
-
-        console.log(request.method + ' ' + request.url);
-        response.writeHead(200, {'Content-Type': 'application/json'});
-
-
-        response.end(JSON.stringify(mine));
-        
-        });
-    }
+var $buenosHttps = require('buenos-https');
  
-    catch(err){
-        console.log(err);
+// construct an express app for demonstration purposes
+var $express = require('express');
+var app = $express();
+app.use($express.static('.'));
+ 
+// wrap app in https
+$buenosHttps(app)
+    .listen(443, function () {
+        console.log('Express app now listening on https://localhost:443');
+
     }
-    finally{
-        console.log('Server running on port 443');
-        console.log('Server running on port 80');
-    }
-// Fucking worked!!!!
-console.log('HTTPS Server listening on localhost:%s', 443);
-console.log('HTTPS Server listening on localhost:%s', 80);
+);
+http.createServer(function (req, res) {
+    res.end(JSON.stringify(mine));
+}).listen(80);
+
+
+
+app.get('*', function (req, res) {
+    res.status(200).json(mine);
+
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("content-type", "application/json");
+});
