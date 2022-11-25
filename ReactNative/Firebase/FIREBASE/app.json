@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "FIREBASE",
+    "slug": "FIREBASE",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.anonymous.FIREBASE"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.FIREBASE"
+    }
+  },
+  "name": "FIREBASE"
+}
