@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    background: #ecf0f3;
+  }
+  
+  .login-div {
+    width: 430px;
+    height: 700px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+  }
+  
+  .logo {
+    background: url("Logo.png");
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf, -8px -8px 15px #ffffff;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+  }
+  
+  .sub-title {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 3px;
+  }
+  
+  .fields {
+    width: 100%;
+    padding: 75px 5px 5px 5px;
+  }
+  
+  .fields input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+  }
+  
+  .username,
+  .password {
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+  }
+  
+  .fields svg {
+    height: 22px;
+    margin: 0 10px -3px 25px;
+  }
+  
+  .signin-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    text-align: center;
+    background: #24cfaa;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: 0.5s;
+  }
+  .signin-button * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .signin-button body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #ecf0f3;
+    color: #a0a5a8;
+  }
+  .signin-button ul {
+    display: flex;
+    flex-direction: column;
+    list-style: decimal-leading-zero;
+    list-style-position: outside;
+  }
+  .signin-button li {
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  .signin-button .main {
+    height: 100vh;
+    width: 100vw;
+    padding: 60px 20px 40px;
+  }
+  @media (min-width: 640px) {
+    .signin-button .main {
+      padding: 100px 50px 50px;
+    }
+  }
+  .signin-button .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .signin-button .clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .signin-button .clock__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    letter-spacing: -0.15px;
+    color: #181818;
+  }
+  .signin-button .clock__checkbox {
+    position: absolute;
+    left: calc(50% + 100px);
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    outline: none;
+    box-shadow: inset 4px 4px 10px #d1d9e6, inset -4px -4px 10px #ffffff;
+    cursor: pointer;
+  }
+  .signin-button .clock__label {
+    position: absolute;
+    left: calc(50% + 130px);
+    font-size: 10px;
+  }
+  .signin-button .clock__inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ecf0f3;
+    box-shadow: inset 4px 4px 10px #d1d9e6, inset -4px -4px 10px #ffffff;
+    height: 60px;
+    width: 170px;
+  }
+  .signin-button .clock__input {
+    height: 30px;
+    width: 45px;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    color: #a0a5a8;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .signin-button .clock__remaining {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #bcd1be;
+  }
+  .signin-button .clock__buttons {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .signin-button .clock__button {
+    height: 45px;
+    width: 130px;
+    margin: 10px 10px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-shadow: 4px 4px 10px #d1d9e6, -4px -4px 10px #ffffff;
+    background-color: #ecf0f3;
+    color: #a0a5a8;
+    cursor: pointer;
+    transition: 0.25s ease;
+  }
+  .signin-button .clock__button:hover {
+    box-shadow: 14px 14px 30px #d1d9e6, -14px -14px 30px #ffffff;
+  }
+  .signin-button .clock__button:active {
+    box-shadow: inset 4px 4px 10px #d1d9e6, inset -4px -4px 10px #ffffff;
+  }
+  .signin-button [disabled],
+  .signin-button [disabled]:hover,
+  .signin-button [disabled]:active {
+    box-shadow: inset 4px 4px 10px #d1d9e6, inset -4px -4px 10px #ffffff;
+  }
+  
+  .signin-button:hover {
+    background: #2fdbb6;
+  }
+  
+  .signin-button:active {
+    background: #1da88a;
+  }
+  
+  .link {
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .link a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 15px;
+  }
